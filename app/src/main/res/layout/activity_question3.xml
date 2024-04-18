@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question3">
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="SIT305 Quiz App"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="171dp"
+        android:text="Question 3:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title1" />
+
+    <TextView
+        android:id="@+id/Q1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="289dp"
+        android:text="What is 10+10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Choice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="165dp"
+        android:text="25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Q1"
+        android:onClick="Choice1"/>
+
+    <Button
+        android:id="@+id/Choice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="163dp"
+        android:text="1010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Choice1"
+        android:onClick="Choice2"/>
+
+    <Button
+        android:id="@+id/Choice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="158dp"
+        android:text="20"
+        app:layout_constraintBottom_toTopOf="@+id/Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Choice2"
+        android:onClick="Choice3"/>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="179dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/black"
+        android:text="Submit"
+        android:textColorLink="#00B0FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="Submit"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:progress="66"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="426dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/Q1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
